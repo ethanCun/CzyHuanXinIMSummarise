@@ -201,7 +201,7 @@
         
         if (model) {
             model.nickname = name;
-            model.avatarImage = [UIImage imageNamed:@"资料"];
+//             model.avatarImage = [UIImage imageNamed:@"资料"];
             
             //获取首字母大写
             NSString *firstLetter = [EaseChineseToPinyin pinyinFromChineseString:name];
