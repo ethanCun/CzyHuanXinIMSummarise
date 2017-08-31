@@ -1,4 +1,5 @@
-### cd tagert => pod install => run
+
+### cd到项目路径 -> vim Podfile -> pod install -> run
 
 
 ### 部分效果图
