@@ -1,1 +1,1 @@
-# CzyIMSummarise
+### cd => tagert => pod install => run
