@@ -1,0 +1,59 @@
+//
+//  PrefixHeader.pch
+//  czyhuanxindemo
+//
+//  Created by macOfEthan on 17/8/21.
+//  Copyright © 2017年 macOfEthan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Common.h"
+#import "Tool.h"
+#import "RootViewController.h" //根控制器
+#import <MBProgressHUD.h>
+#import "DataManaget.h" //管理消息和用户的简单数据库
+#import "UserModel.h" //用户模型
+#import "FriendShipModel.h" //好友关系管理模型
+#import "FriendShipManager.h"
+
+#import <AVOSCloud.h> //第三方后端
+#import <AVOSCloudCrashReporting.h>
+
+//LearnClound后端信息
+#define LearnClound_APPID @"JI6AVc6RkAkzNtc4agN5O2Yn-gzGzoHsz"
+#define LearnClound_APPKEY @"VG8iEbxwDlUfiRb8cgGiAaS6"
+
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((fmt), ##__VA_ARGS__);
+//# define DLog(fmt, ...) NSLog((@"\n[File:%s]\n" "[Function:%s]\n" "[Line:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+#define FULL_WIDTH [UIScreen mainScreen].bounds.size.width
+#define FULL_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+//应用标识(AppKey) 规则是 ${org_name:企业的唯一标识，开发者在环信开发者管理后台注册账号时填写的企业 ID}#${app_name:同一“企业”下“APP”唯一标识，开发者在环信开发者管理后台创建应用时填写的“应用名称”}
+#define APP_KEY @"1102161216178260#czyhuanxindemo"
+
+//debug推送证书名字
+#define DEBUG_CER_NAME @"Huanxin"
+
+//授权模式
+#define CLIENT_ID @"YXA6eG1kYHGvEeeVkS2iWPFPaA"
+#define CLIENT_SECRET @"YXA6b1CyiAVT2IibX1fijxyuwfprBUw"
+
+//偏好设置 事件问题 不存在数据库
+#define CzyDefault [NSUserDefaults standardUserDefaults]
+
+//通知中心
+#define CzyNotificationCenter [NSNotificationCenter defaultCenter]
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
