@@ -1,1 +1,1 @@
-### cd => tagert => pod install => run
+### cd tagert => pod install => run
